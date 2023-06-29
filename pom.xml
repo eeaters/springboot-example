@@ -16,6 +16,7 @@
 	<properties>
 		<java.version>20</java.version>
 		<spring-cloud.version>2021.0.7</spring-cloud.version>
+		<common.lang3.version>3.7</common.lang3.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -25,6 +26,15 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-sleuth</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${common.lang3.version}</version>
 		</dependency>
 
 		<dependency>

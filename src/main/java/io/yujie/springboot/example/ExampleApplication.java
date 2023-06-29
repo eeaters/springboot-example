@@ -1,13 +1,13 @@
-package io.yujie.springbootexample;
+package io.yujie.springboot.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootExampleApplication {
+public class ExampleApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbootExampleApplication.class, args);
+		SpringApplication.run(ExampleApplication.class, args);
 	}
 
 }
