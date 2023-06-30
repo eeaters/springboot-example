@@ -7,3 +7,8 @@ package包 io/yujie/springboot/example/config/log 下面
 1. 参照了spring的 `CommonsRequestLoggingFilter`
 2. https://github.com/frandorado/spring-projects[frandorado的项目]
 
+== 单FeignClient快速测试类 + Wxpusher消息推送
+
+- https://github.com/eeaters/springboot-example/blob/d666929bef9857fca2f111cf7f53d7ea55f8665f/src/test/java/io/yujie/springboot/example/feigh/WxPusherClientTest.java[WxPusherClientTest]
+- https://wxpusher.zjiecode.com/docs/#/[什么是WxPusher]
+
