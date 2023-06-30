@@ -1,0 +1,9 @@
+:toc:
+:toc-title: 功能列表
+
+== Web Log
+package包 io/yujie/springboot/example/config/log 下面
+
+1. 参照了spring的 `CommonsRequestLoggingFilter`
+2. https://github.com/frandorado/spring-projects[frandorado的项目]
+
