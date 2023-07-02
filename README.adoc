@@ -23,3 +23,9 @@ package包 io/yujie/springboot/example/config/log 下面
 == 顺丰同城接口 + Feign使用Encoder进行统一加签
 - https://github.com/eeaters/springboot-example/blob/master/src/main/java/io/yujie/springboot/example/feign/SfDeliveryClient.java[SfDeliveryClient]
 - https://github.com/eeaters/springboot-example/blob/master/src/main/java/io/yujie/springboot/example/feign/config/SfConfig.java[SfConfig#signEncoder]
+
+== 基于地理坐标,计算一个规则的多边形
+类似于es的circle类型会使用规则的多边形geo_shape进行存储
+
+- https://www.elastic.co/guide/en/elasticsearch/reference/current/ingest-circle-processor.html[elastic search CircleProcessor]
+- https://github.com/eeaters/springboot-example/blob/master/src/main/java/io/yujie/springboot/example/util/GeoUtils.java[GeoUtils]
