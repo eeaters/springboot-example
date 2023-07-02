@@ -20,3 +20,6 @@ package包 io/yujie/springboot/example/config/log 下面
 - https://github.com/eeaters/springboot-example/blob/d666929bef9857fca2f111cf7f53d7ea55f8665f/src/test/java/io/yujie/springboot/example/feigh/WxPusherClientTest.java[WxPusherClientTest]
 - https://wxpusher.zjiecode.com/docs/#/[什么是WxPusher]
 
+== 顺丰同城接口 + Feign使用Encoder进行统一加签
+- https://github.com/eeaters/springboot-example/blob/d666929bef9857fca2f111cf7f53d7ea55f8665f/src/main/java/io/yujie/springboot/example/feign/SfDeliveryClient.java[SfDeliveryClient]
+- https://github.com/eeaters/springboot-example/blob/d666929bef9857fca2f111cf7f53d7ea55f8665f/src/main/java/io/yujie/springboot/example/feign/config/SfConfig.java[SfConfig#signEncoder]

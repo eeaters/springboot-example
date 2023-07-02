@@ -3,7 +3,7 @@ package io.yujie.springboot.example.feigh;
 
 import io.yujie.springboot.example.config.property.WxPusherProperty;
 import io.yujie.springboot.example.feign.WxPusherClient;
-import io.yujie.springboot.example.feign.req.WxPusherMessage;
+import io.yujie.springboot.example.feign.req.wxpusher.WxPusherMessage;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration;
 import org.springframework.boot.env.YamlPropertySourceLoader;

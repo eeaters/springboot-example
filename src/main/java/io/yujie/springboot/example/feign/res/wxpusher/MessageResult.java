@@ -1,4 +1,4 @@
-package io.yujie.springboot.example.feign.res;
+package io.yujie.springboot.example.feign.res.wxpusher;
 
 import lombok.Data;
 

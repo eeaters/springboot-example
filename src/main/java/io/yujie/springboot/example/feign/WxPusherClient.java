@@ -1,8 +1,8 @@
 package io.yujie.springboot.example.feign;
 
 import io.yujie.springboot.example.feign.base.WxPusherResult;
-import io.yujie.springboot.example.feign.req.WxPusherMessage;
-import io.yujie.springboot.example.feign.res.MessageResult;
+import io.yujie.springboot.example.feign.req.wxpusher.WxPusherMessage;
+import io.yujie.springboot.example.feign.res.wxpusher.MessageResult;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
