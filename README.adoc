@@ -1,7 +1,8 @@
 :toc:
-:toc-title: 功能列表
+:toc-title: 列表
 
-== 项目依赖
+== 依赖
+=== 组件依赖
 |====
 | 序号| 组件 | 版本
 | 1| java | 20
@@ -9,22 +10,32 @@
 |3 | springcloud | 2021.0.7
 |====
 
-== Web Log
-package包 io/yujie/springboot/example/config/log 下面
+== 业务功能
+=== Wxpusher微信消息推送
+- https://wxpusher.zjiecode.com/docs/#/[什么是WxPusher]
+- https://github.com/eeaters/springboot-example/blob/ac6ff8f112d1fd7f322430867f017bd685e849d5/src/main/java/io/yujie/springboot/example/feign/WxPusherClient.java[WxPusherClient]
 
-1. 参照了spring的 `CommonsRequestLoggingFilter`
-2. https://github.com/frandorado/spring-projects[frandorado的项目]
+=== 顺丰同城配送
+- https://github.com/eeaters/springboot-example/blob/ac6ff8f112d1fd7f322430867f017bd685e849d5/src/main/java/io/yujie/springboot/example/feign/SfDeliveryClient.java[顺丰同城预下单]
+- https://commit-openic.sf-express.com/#/apidoc[顺丰同城开放平台]
 
-== 单FeignClient快速测试类 + Wxpusher消息推送
+== 框架功能
+=== Web Log
+
+- https://github.com/eeaters/springboot-example/blob/ac6ff8f112d1fd7f322430867f017bd685e849d5/src/main/java/io/yujie/springboot/example/config/log[请求拦截]
+参照了:
+1. spring的 `CommonsRequestLoggingFilter` 拦截器,该拦截器默认给的是debug日志
+2. https://github.com/frandorado/spring-projects[frandorado项目中log的写法]
+
+=== Feign快速测试类+yaml文件解析
 
 - https://github.com/eeaters/springboot-example/blob/d666929bef9857fca2f111cf7f53d7ea55f8665f/src/test/java/io/yujie/springboot/example/feigh/WxPusherClientTest.java[WxPusherClientTest]
-- https://wxpusher.zjiecode.com/docs/#/[什么是WxPusher]
+- 使用spring的 `YamlPropertySourceLoader` 对yaml解析
 
-== 顺丰同城接口 + Feign使用Encoder进行统一加签
-- https://github.com/eeaters/springboot-example/blob/master/src/main/java/io/yujie/springboot/example/feign/SfDeliveryClient.java[SfDeliveryClient]
+=== Feign使用Encoder进行统一加签
 - https://github.com/eeaters/springboot-example/blob/master/src/main/java/io/yujie/springboot/example/feign/config/SfConfig.java[SfConfig#signEncoder]
 
-== 基于地理坐标,计算一个规则的多边形
+=== 基于地理坐标,计算一个规则的多边形
 类似于es的circle类型会使用规则的多边形geo_shape进行存储
 
 - https://www.elastic.co/guide/en/elasticsearch/reference/current/ingest-circle-processor.html[elastic search CircleProcessor]
