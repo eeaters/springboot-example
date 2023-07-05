@@ -20,6 +20,8 @@ import org.springframework.core.io.support.EncodedResource;
 import java.io.IOException;
 import java.util.List;
 
+import static io.yujie.springboot.example.EnvHelper.getEnv;
+
 @EnableFeignClients(clients = WxPusherClient.class)
 @Configuration
 public class WxPusherClientTest {
@@ -52,19 +54,5 @@ public class WxPusherClientTest {
         context.close();
     }
 
-
-    public ConfigurableEnvironment getEnv() throws IOException {
-        ConfigurableEnvironment configurableEnvironment = new StandardEnvironment();
-        YamlPropertySourceLoader propertySourceLoader = new YamlPropertySourceLoader();
-        String name = "application";
-        ClassPathResource classPathResource = new ClassPathResource("application.yml");
-        EncodedResource encodedResource = new EncodedResource(classPathResource);
-        List<PropertySource<?>> load = propertySourceLoader.load(name, encodedResource.getResource());
-
-        for (PropertySource<?> propertySource : load) {
-            configurableEnvironment.getPropertySources().addFirst(propertySource);
-        }
-        return configurableEnvironment;
-    }
 
 }

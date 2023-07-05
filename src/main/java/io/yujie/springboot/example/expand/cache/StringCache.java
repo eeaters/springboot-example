@@ -24,6 +24,8 @@ public abstract class StringCache<T> extends CacheBase {
         return Optional.of(t);
     }
 
+
+
     protected abstract T loadFromStorage(CacheKey cacheKey) ;
 
     protected abstract Collection<T> loadFromStorage(Collection<CacheKey> cacheKeys);
