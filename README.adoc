@@ -41,6 +41,6 @@
 - https://www.elastic.co/guide/en/elasticsearch/reference/current/ingest-circle-processor.html[elastic search CircleProcessor]
 - https://github.com/eeaters/springboot-example/blob/master/src/main/java/io/yujie/springboot/example/util/GeoUtils.java[GeoUtils]
 
-=== RedisTemplate快速启动+字段不一致能够正常与redis交互
+=== RedisTemplate快速测试+字段不一致能够正常与redis交互
 
 - https://github.com/eeaters/springboot-example/blob/master/src/test/java/io/yujie/springboot/example/cache.RedisTest.java[RedisTest]
