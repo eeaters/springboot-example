@@ -17,6 +17,7 @@
 		<java.version>20</java.version>
 		<spring-cloud.version>2021.0.7</spring-cloud.version>
 		<common.lang3.version>3.7</common.lang3.version>
+		<spring.doc.version>1.7.0</spring.doc.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -62,6 +63,14 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>${spring.doc.version}</version>
+		</dependency>
+
+
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>

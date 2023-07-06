@@ -27,6 +27,13 @@
 1. spring的 `CommonsRequestLoggingFilter` 拦截器,该拦截器默认给的是debug日志
 2. https://github.com/frandorado/spring-projects[frandorado项目中log的写法]
 
+
+=== openDoc-V3
+- 引入  https://springdoc.org/[springdoc-openapi-ui] ,引入后访问 `localhost:8080/swagger-ui.html` 即可
+- [line-through]#springfox-boot-starter# 项目没人维护,不想用了
+- https://springdoc.org/#migrating-from-springfox[与swagger2注解的对比]
+
+
 === Feign快速测试类+yaml文件解析
 
 - https://github.com/eeaters/springboot-example/blob/d666929bef9857fca2f111cf7f53d7ea55f8665f/src/test/java/io/yujie/springboot/example/feigh/WxPusherClientTest.java[WxPusherClientTest]
