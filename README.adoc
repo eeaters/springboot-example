@@ -13,16 +13,16 @@
 == 业务功能
 === Wxpusher微信消息推送
 - https://wxpusher.zjiecode.com/docs/#/[什么是WxPusher]
-- https://github.com/eeaters/springboot-example/blob/ac6ff8f112d1fd7f322430867f017bd685e849d5/src/main/java/io/yujie/springboot/example/feign/WxPusherClient.java[WxPusherClient]
+- https://github.com/eeaters/springboot-example/blob/master/src/main/java/io/yujie/springboot/example/feign/WxPusherClient.java[WxPusherClient]
 
 === 顺丰同城配送
-- https://github.com/eeaters/springboot-example/blob/ac6ff8f112d1fd7f322430867f017bd685e849d5/src/main/java/io/yujie/springboot/example/feign/SfDeliveryClient.java[顺丰同城预下单]
+- https://github.com/eeaters/springboot-example/blob/master/src/main/java/io/yujie/springboot/example/feign/SfDeliveryClient.java[顺丰同城预下单]
 - https://commit-openic.sf-express.com/#/apidoc[顺丰同城开放平台]
 
 == 框架功能
 === Web Log
 
-- https://github.com/eeaters/springboot-example/blob/ac6ff8f112d1fd7f322430867f017bd685e849d5/src/main/java/io/yujie/springboot/example/config/log[请求拦截]
+- https://github.com/eeaters/springboot-example/blob/master/src/main/java/io/yujie/springboot/example/config/log[请求拦截]
 参照了:
 1. spring的 `CommonsRequestLoggingFilter` 拦截器,该拦截器默认给的是debug日志
 2. https://github.com/frandorado/spring-projects[frandorado项目中log的写法]
@@ -49,4 +49,4 @@
 - https://github.com/eeaters/springboot-example/blob/master/src/test/java/io/yujie/springboot/example/cache.RedisTest.java[RedisTest]
 
 === Mysql
-- https://github.com/eeaters/springboot-example/blob/805318fd1c37f239dc81f4bb0f26213b9bfbf468/src/test/java/io/yujie/springboot/example/mysql/UserTest.java[UserTest]
+- https://github.com/eeaters/springboot-example/blob/master/src/test/java/io/yujie/springboot/example/mysql/UserTest.java[UserTest]
