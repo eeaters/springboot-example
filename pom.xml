@@ -18,6 +18,7 @@
 		<spring-cloud.version>2021.0.7</spring-cloud.version>
 		<common.lang3.version>3.7</common.lang3.version>
 		<spring.doc.version>1.7.0</spring.doc.version>
+		<tk.mybatis.version>4.2.3</tk.mybatis.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -70,6 +71,17 @@
 			<version>${spring.doc.version}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>tk.mybatis</groupId>
+			<artifactId>mapper-spring-boot-starter</artifactId>
+			<version>${tk.mybatis.version}</version>
+		</dependency>
 
 	</dependencies>
 	<dependencyManagement>
