@@ -11,7 +11,7 @@ import org.springframework.transaction.support.TransactionTemplate;
 
 import java.util.List;
 
-@Component
+//@Component
 public class MybatisRunnable {
 
 

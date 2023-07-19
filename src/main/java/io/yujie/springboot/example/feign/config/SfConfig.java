@@ -5,9 +5,11 @@ import feign.RequestTemplate;
 import feign.codec.EncodeException;
 import feign.codec.Encoder;
 import io.yujie.springboot.example.config.exception.LogicException;
+import io.yujie.springboot.example.config.property.SfDeliveryProperty;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.binary.Base64;
 import org.springframework.beans.factory.ObjectFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
 import org.springframework.cloud.openfeign.support.SpringEncoder;
 import org.springframework.context.annotation.Bean;
@@ -19,6 +21,10 @@ import java.security.MessageDigest;
 @Slf4j
 public class SfConfig {
 
+
+    @Autowired
+    SfDeliveryProperty deliveryProperty;
+
     @Bean
     public Encoder signEncoder(ObjectFactory<HttpMessageConverters> messageConverters) {
 
@@ -26,12 +32,10 @@ public class SfConfig {
         return new SpringEncoder(messageConverters) {
             @Override
             public void encode(Object requestBody, Type bodyType, RequestTemplate request) throws EncodeException {
-                Integer appId = 1668137074;
-                String appKey = "you app key";
                 String sign;
                 try {
                     sign = generateSign(objectMapper.writeValueAsString(requestBody),
-                            appId, appKey);
+                            deliveryProperty.getAppId(), deliveryProperty.getAppKey());
                 } catch (Exception e) {
                     throw new LogicException("顺丰同城加签失败");
                 }
