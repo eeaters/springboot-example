@@ -1,0 +1,8 @@
+third:
+  delivery:
+    sf:
+      appId: you appId
+      appKey: you appKey
+      productType: 10
+      shopType: 2
+      mock: false

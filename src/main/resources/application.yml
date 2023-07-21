@@ -6,19 +6,5 @@ spring:
     username: root
     password: 123456
 
-
-
-
-third:
-  wx:
-    pusher:
-      appToken: you appToken
-      topic:
-        eighty: 10501
-  delivery:
-    sf:
-      appId: you appId
-      appKey: you appKey
-      productType: 10
-      shopType: 2
-      mock: false
+  profiles:
+    active: dev

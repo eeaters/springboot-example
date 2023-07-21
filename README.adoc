@@ -19,6 +19,12 @@
 - https://github.com/eeaters/springboot-example/blob/master/src/main/java/io/yujie/springboot/example/feign/SfDeliveryClient.java[顺丰同城预下单]
 - https://commit-openic.sf-express.com/#/apidoc[顺丰同城开放平台]
 
+=== 基于地理坐标,计算一个规则的多边形
+类似于es的circle类型会使用规则的多边形geo_shape进行存储
+
+- https://www.elastic.co/guide/en/elasticsearch/reference/current/ingest-circle-processor.html[elastic search CircleProcessor]
+- https://github.com/eeaters/springboot-example/blob/master/src/main/java/io/yujie/springboot/example/util/GeoUtils.java[GeoUtils]
+
 == 框架功能
 === Web Log
 
@@ -35,11 +41,8 @@
 === Feign使用Encoder进行统一加签
 - https://github.com/eeaters/springboot-example/blob/master/src/main/java/io/yujie/springboot/example/feign/config/SfConfig.java[SfConfig#signEncoder]
 
-=== 基于地理坐标,计算一个规则的多边形
-类似于es的circle类型会使用规则的多边形geo_shape进行存储
-
-- https://www.elastic.co/guide/en/elasticsearch/reference/current/ingest-circle-processor.html[elastic search CircleProcessor]
-- https://github.com/eeaters/springboot-example/blob/master/src/main/java/io/yujie/springboot/example/util/GeoUtils.java[GeoUtils]
+=== 加载不同文件夹下的配置文件
+- https://github.com/eeaters/springboot-example/blob/master/src/main/java/io/yujie/springboot/example/config/property/EnvConfigLoaderListener.java[在PrepareEnvironment阶段加载]
 
 == 快速测试
 === Feign

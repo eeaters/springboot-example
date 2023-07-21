@@ -1,0 +1,6 @@
+third:
+  wx:
+    pusher:
+      appToken: you appToken
+      topic:
+        eighty: 10501
