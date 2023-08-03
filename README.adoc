@@ -25,6 +25,11 @@
 - https://www.elastic.co/guide/en/elasticsearch/reference/current/ingest-circle-processor.html[elastic search CircleProcessor]
 - https://github.com/eeaters/springboot-example/blob/master/src/main/java/io/yujie/springboot/example/util/GeoUtils.java[GeoUtils]
 
+=== 引入groovy动态脚本
+
+- https://github.com/eeaters/springboot-example/blob/master/src/main/test/io/yujie/springboot/example/dynamic/GroovyTest.java[GroovyTest]
+性能不咋地。目前没想到太好的用处
+
 == 框架功能
 === Web Log
 

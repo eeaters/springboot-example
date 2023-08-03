@@ -83,6 +83,16 @@
 			<version>${tk.mybatis.version}</version>
 		</dependency>
 
+
+		<!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-all -->
+		<dependency>
+			<groupId>org.codehaus.groovy</groupId>
+			<artifactId>groovy-all</artifactId>
+			<version>3.0.18</version>
+			<type>pom</type>
+		</dependency>
+
+
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
